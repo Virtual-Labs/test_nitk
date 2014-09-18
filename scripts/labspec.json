@@ -16,35 +16,8 @@
                 "service_pack": ""
             }
         }, 
-        "description": {
-            "developer": [
-                {
-                    "contact": {
-                        "alternate_email": "", 
-                        "email": "sreejith1011@gmail.com", 
-                        "mobile_number": "09895224250",
-                        "office_number": ""
-                    }, 
-                    "department": "CREATE",
-                    "institute": "Amrita", 
-                    "name": "Sreejith", 
-                    "organization": "", 
-                    "role": "Lab Developer", 
-                    "title": "", 
-                    "web": ""
-                }, 
-            ], 
-            "discipline": [
-                "Bio-technology"
-            ], 
-            "id": "bio01", 
-            "integration_level": 5, 
-            "name": "Biotechnology", 
-            "server-side": true, 
-            "status": "Released", 
-            "type": ""
-        }, 
-        "runtime_requirements": {
+        
+	"runtime_requirements": {
             "platform": {
                 "arch": "i386", 
                 "hosting": "dedicated", 
