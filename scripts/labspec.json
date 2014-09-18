@@ -54,7 +54,7 @@
                     "backup": [], 
                     "clean": [], 
                     "init": ["mv /var/www/index.html index.html.default",
-                        "cp -r ../* /var/www/"
+                        "cp -r ../build/* /var/www/"
                         ], 
                     "pause": [], 
                     "publish": [], 

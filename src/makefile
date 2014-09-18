@@ -1,0 +1,20 @@
+build-dir=../build
+lib-dir=lib
+build-js-dir=${build-dir}/js
+
+
+all:  help-dir 
+
+help-dir:
+	(find ${build-dir} -mindepth 1 -maxdepth 1 ! -name js -print0 | xargs -0n1 rm -rf)
+	(touch ${build-dir}/; rsync -avC index.html  js scripts  vlab ${build-dir})
+
+
+
+
+# don't remove the js directory, since copying it again with mathjax takes too long.
+# http://superuser.com/questions/168130/unix-delete-files-and-folders-excluding-pattern
+clean:
+	(find ${build-dir} -mindepth 1 -maxdepth 1 ! -name js -print0 | xargs -0n1 rm -rf)
+
+
