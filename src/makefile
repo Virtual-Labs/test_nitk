@@ -2,12 +2,14 @@ build-dir=../build
 lib-dir=lib
 build-js-dir=${build-dir}/js
 
+theme=blue-icon
+
 
 all:  help-dir 
 
 help-dir:
 	(find ${build-dir} -mindepth 1 -maxdepth 1 ! -name js -print0 | xargs -0n1 rm -rf)
-	(touch ${build-dir}/; rsync -avC index.html  js scripts  vlab ${build-dir})
+	(touch ${build-dir}/theme-${theme}; rsync -avC index.html  js scripts  vlab ${build-dir})
 
 
 
